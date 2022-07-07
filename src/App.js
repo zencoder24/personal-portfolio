@@ -22,17 +22,18 @@ function App() {
     }, [])
 
     return (
-        <div className=' text-white'>
+        <div>
             <Particles className='fixed h-full w-full m-0 p-0 left-0 top-0 -z-10' options={particlesOptions} init={particlesInit}/>
-            <Navbar/>
-            <Routes>
-                <Route exact path='/' element={<Home/>}/>
-                <Route path='/about' element={<About/>}/>
-                <Route path='/projects' element={<Projects/>}/>
-                <Route path='/skills' element={<Skills/>}/>
-                <Route path='/blog' element={<Blog/>}/>
-                <Route path='/contact' element={<Contact/>}/>
-            </Routes>
+                <Navbar/>
+                <Routes>
+                    <Route exact path='/' element={<Home/>}/>
+                    <Route path='/about' element={<About/>}/>
+                    <Route path='/projects' element={<Projects/>}/>
+                    <Route path='/skills' element={<Skills/>}/>
+                    <Route path='/blog' element={<Blog/>}/>
+                    <Route path='/contact' element={<Contact/>}/>
+                </Routes>
+            
         </div>
     );
 }
