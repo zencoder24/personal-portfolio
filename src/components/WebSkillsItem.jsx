@@ -32,7 +32,7 @@ const components = {
 const WebSkillsItem = ({skillIcon}) => {
     const SkillItem = components[skillIcon]
     return (
-        <div className=' border-2 rounded-lg p-6 fill-white hover:fill-[#ACE6E6] '>
+        <div className=' shadow-calm-green shadow-md  rounded-lg p-6 fill-white hover:fill-calm-green '>
             <SkillItem/>
             <h2 className=' uppercase text-sm text-white text-center font-bold mt-1'>{skillIcon}</h2>
         </div>
