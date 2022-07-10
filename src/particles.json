@@ -6,7 +6,7 @@
   "fpsLimit": 120,
   "particles": {
     "number": {
-      "value": 80,
+      "value": 30,
       "density": {
         "enable": true,
         "value_area": 800
@@ -47,7 +47,7 @@
         "mode": "repulse"
       },
       "onClick": {
-        "enable": true,
+        "enable": false,
         "mode": "push"
       },
       "resize": true
@@ -63,6 +63,6 @@
   },
   "detectRetina": true,
   "background": {
-    "color": "141414"
+    "color": "#141414"
   }
 }
