@@ -28,10 +28,10 @@ const ProjectItem = ({img, project, srcCode, liveSite, desc}) => {
                 </div>
                 <div className='button-group flex justify-around my-5 text-white'>
                     <a href={srcCode}>
-                        <button className=' hover:bg-calm-green bg-teal-600 rounded-full px-2 py-2 uppercase font-bold' href={srcCode}>Source Code</button>
+                        <button className=' hover:bg-calm-green bg-slate-700 rounded-full px-2 py-2 uppercase font-bold' href={srcCode}>Source Code</button>
                     </a>
                     <a href={liveSite}>
-                        <button className='hover:bg-calm-green bg-teal-600 rounded-full px-2 py-2 uppercase font-bold' href={liveSite}>Live Site</button>
+                        <button className='hover:bg-calm-green bg-slate-700 rounded-full px-2 py-2 uppercase font-bold' href={liveSite}>Live Site</button>
                     </a>
                 </div>
             </div>
