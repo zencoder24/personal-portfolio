@@ -12,7 +12,7 @@ const variants ={
 }
 
 
-const Nav = () => {
+const NavMenu = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
@@ -21,7 +21,7 @@ const Nav = () => {
             animate={menuOpen? "open" : "closed"}
             variants={variants}
             transition={{duration: 0.5}}
-            className='font-LeagueSpartan fixed top-0 right-0 bottom-0 w-72 z-[100] shadow-xl  text-white text-right '>  
+            className='md:hidden font-LeagueSpartan fixed top-0 right-0 bottom-0 w-72 z-[100] shadow-xl  text-white text-right '>  
                 <div className='absolute top-0 right-0 bottom-0 w-full bg-[#141414] opacity-100'>
                     <div className='link-menu-container h-full flex flex-col space-y-5 justify-center text-center'>
                         <Link onClick={(e) => setMenuOpen(!menuOpen)} className=' text-2xl uppercase hover:text-calm-green' to="/">Home</Link>
@@ -50,4 +50,4 @@ const Nav = () => {
     );
 };
 
-export default Nav;
+export default NavMenu;
