@@ -1,9 +1,18 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import WebSkillsItem from "../components/WebSkillsItem";
 import skillsData from "../skills.json";
 const About = () => {
   return (
     <section className="py-40 px-10 flex flex-col space-y-12 lg:px-40 ">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta
+          name="description"
+          content="About section of a Portfolio Site built using React.js by Rodderick Garland"
+        />
+        <title>Rod Garland | About Me</title>
+      </Helmet>
       <div className="about">
         <h3 className=" text-center text-white font-bold uppercase text-sm">
           Learn A Little
