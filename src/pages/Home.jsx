@@ -23,17 +23,23 @@ const Home = () => {
       <p className="font-bold text-calm-green uppercase text-center text-xl md:2xl:">
         Full Stack Web Developer
       </p>
-      <div className="social icons justify-center space-x-3 flex">
+      <a
+        href="https://github.com/zencoder24"
+        className="social icons justify-center space-x-3 flex"
+      >
         <div className=" bg-white/[.1] hover:bg-calm-green p-2 rounded-full flex justify-center cursor-pointer">
           <FontAwesomeIcon className=" text-xl text-white" icon={faGithub} />
         </div>
-        <div className=" bg-white/[.1] hover:bg-calm-green p-2 rounded-full flex justify-center cursor-pointer">
+        <a
+          href="https://www.linkedin.com/in/rodderick-garland-58ba19160/"
+          className=" bg-white/[.1] hover:bg-calm-green p-2 rounded-full flex justify-center cursor-pointer"
+        >
           <FontAwesomeIcon
             className=" text-xl text-white"
             icon={faLinkedinIn}
           />
-        </div>
-      </div>
+        </a>
+      </a>
     </div>
   );
 };
