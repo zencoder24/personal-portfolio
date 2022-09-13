@@ -1,8 +1,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/zencoder24">
-    <img src="repo_assets/logo_the_web_apex.svg" alt="Logo" width="200" height="100" >
+  <a href="https://github.com/zencoder24" >
+    <img style="background-color: cadetblue ; padding: 1rem" src="repo_assets/logo_the_web_apex.svg" alt="Logo" width="200" height="100" >
   </a>
 
 <h3 align="center">Personal Portfolio v1</h3>
