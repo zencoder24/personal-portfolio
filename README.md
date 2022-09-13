@@ -2,7 +2,6 @@
 <br />
 <div align="center">
 
-
 <h3 align="center">Personal Portfolio v1</h3>
 
   <p align="center">
@@ -16,6 +15,8 @@
     <a href="https://github.com/zencoder24/personal-portfolio/issues">Request Feature</a>
   </p>
 </div>
+
+---
 
 <!-- TABLE OF CONTENTS -->
 <details>
