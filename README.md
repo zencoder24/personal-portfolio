@@ -2,6 +2,8 @@
 <br />
 <div align="center">
 
+---
+
 <h3 align="center">Personal Portfolio v1</h3>
 
   <p align="center">
