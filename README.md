@@ -47,7 +47,7 @@
 
 <!-- ABOUT THE PROJECT -->
 
-## About The Project
+## About This Project
 
 ## <img src="repo_assets/desktop_rtd.png" alt="Logo" >
 
