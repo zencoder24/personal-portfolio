@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
-import resume from "../assets/resume/Rodderick Garland_Web_Devleoper_Resume.pdf";
+import resume from "../assets/resume/Rodderick Garland_Resume_Fall_2022.pdf";
 
 const Resume = () => {
   return (
