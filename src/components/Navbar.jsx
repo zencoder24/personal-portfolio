@@ -30,7 +30,7 @@ const Navbar = () => {
       </Link>
       <a
         className="text-xl  font-bold text-white hover:border-b-4  focus:border-b-4  focus:border-calm-green hover:leading-4 focus:leading-4  hover:border-calm-green hover:rounded-sm "
-        href="https://apex-blogs.vercel.app/"
+        href="https://blogs.rodthedev.com/"
       >
         Blog
       </a>
