@@ -24,6 +24,8 @@ const Home = () => {
         Full Stack Web Developer
       </p>
       <a
+        target="_blank"
+        rel="noreferrer noopener"
         href="https://github.com/zencoder24"
         className="social icons justify-center space-x-3 flex"
       >
@@ -32,6 +34,8 @@ const Home = () => {
         </div>
         <a
           href="https://www.linkedin.com/in/rodderick-garland-58ba19160/"
+          target="_blank"
+          rel="noreferrer noopener"
           className=" bg-white/[.1] hover:bg-calm-green p-2 rounded-full flex justify-center cursor-pointer"
         >
           <FontAwesomeIcon
