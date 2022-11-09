@@ -4,7 +4,7 @@
 
 ---
 
-<h3 align="center">Personal Portfolio v1</h3>
+<h1 align="center">Personal Portfolio v1</h1>
 
   <p align="center">
    Personal Portfolio for <a href="https://github.com/zencoder24">Rodderick Garland</a>
@@ -69,7 +69,11 @@
 
 ### Built With
 
-[![React][react.js]][react-url]
+<p>
+   <img alt="React" src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white" height="25px"/>
+   <img alt="Tailwidcss" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" height="25px"/>
+   <img alt="Framer" src="https://img.shields.io/badge/framer-0055FF?style=for-the-badge&logo=framer&logoColor=white" height="25px"/>
+</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,6 +131,9 @@ You will find all the components used and you can edit your information accordin
 Give a ⭐ if you like this website!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-coders-sweat.svg)](https://forthebadge.com)
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
