@@ -1,9 +1,15 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Nav from "./Nav";
+import FooterSection from "./FooterSection";
 
 const Layout = ({ children }) => {
-  return <>{children}</>;
+  return (
+    <>
+      <Nav />
+      {children}
+      <FooterSection />
+    </>
+  );
 };
 
 export default Layout;
