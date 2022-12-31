@@ -49,7 +49,10 @@ const Shape = () => {
 };
 const Blob = () => {
   return (
-    <Canvas className=" bg-[#e3e0cc] !w-1/2" camera={{ position: [0, 0, 8] }}>
+    <Canvas
+      className=" bg-[#e3e0cc] h-auto w-full md:!w-1/2"
+      camera={{ position: [0, 0, 8] }}
+    >
       <Shape />
     </Canvas>
   );
