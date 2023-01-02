@@ -25,7 +25,7 @@ const Shape = () => {
 
       mesh.current.material.uniforms.u_intensity.value = MathUtils.lerp(
         mesh.current.material.uniforms.u_intensity.value,
-        hover.current ? 1 : 0.1,
+        hover.current ? 1 : 0.8,
         0.02
       );
     }
@@ -33,7 +33,7 @@ const Shape = () => {
   return (
     <mesh
       ref={mesh}
-      scale={1.5}
+      scale={1.6}
       onPointerOver={() => (hover.current = true)}
       onPointerOut={() => (hover.current = false)}
     >
@@ -50,7 +50,7 @@ const Shape = () => {
 const Blob = () => {
   return (
     <Canvas
-      className=" bg-[#e3e0cc] h-auto w-full md:!w-1/2"
+      className="-z-50 w-full md:mt-[-24rem] md:!w-[50%]"
       camera={{ position: [0, 0, 8] }}
     >
       <Shape />

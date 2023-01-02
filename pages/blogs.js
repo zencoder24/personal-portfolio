@@ -4,7 +4,7 @@ import BlogCard from "../components/BlogCard";
 export class Blogs extends Component {
   render() {
     return (
-      <div className="my-32 mx-6 md:mx-16 ">
+      <div className="my-32 mx-6 text-white md:mx-16 ">
         <div id="blogs-head" className="flex flex-col gap-12 ">
           <div className="flex flex-col gap-y-4 md:grid md:grid-cols-2">
             <h1 className="text-4xl font-bold md:text-5xl">apex-blogs</h1>

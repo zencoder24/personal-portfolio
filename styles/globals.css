@@ -3,12 +3,13 @@
 @tailwind utilities;
 
 html {
-  background: #fffbf3;
+  background: #1b1b1b;
 }
 
 html,
 body {
-  height: 100vh;
+  background-size: cover;
+  margin: 0;
 }
 
 canvas {

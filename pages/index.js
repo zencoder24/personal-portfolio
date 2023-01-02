@@ -5,7 +5,7 @@ import HeroContent from "../components/HeroContent";
 export default function Home() {
   return (
     <>
-      <div className=" flex flex-col md:flex-row w-full">
+      <div className="mt-36 flex w-full flex-col items-center md:flex-row">
         <HeroContent />
         <Blob />
       </div>
