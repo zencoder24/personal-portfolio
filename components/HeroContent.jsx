@@ -1,12 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbTack, faPen } from "@fortawesome/free-solid-svg-icons";
+import GlassButton from "./GlassButton";
 
 const HeroContent = () => {
   return (
     <div className="h-screen w-full  md:w-[50%]">
       <main className="flex h-full flex-col gap-8">
         <div>
-          <h1 className=" text-4xl font-extrabold text-white md:text-5xl">
+          <h1 className=" text-4xl font-extrabold text-gray-200 md:text-5xl">
             Hello, My Name is{" "}
             <span className="bg-gradient-to-tr from-orange-400 to-rose-400 bg-clip-text text-transparent">
               Rod Garland
@@ -27,12 +28,10 @@ const HeroContent = () => {
         </div>
 
         <div className="flex flex-row gap-4">
-          <button className="group  relative inline-flex items-center justify-center overflow-hidden whitespace-nowrap rounded-lg bg-gradient-to-br from-orange-400 to-rose-400 px-8 py-2 text-lg text-sm font-medium  text-white">
+          <button className="group  relative inline-flex items-center justify-center overflow-hidden whitespace-nowrap rounded-lg bg-gradient-to-br from-orange-400 to-rose-400 px-8 py-2 text-lg  font-medium  text-white">
             About Me
           </button>
-          <button className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-orange-400 to-rose-400 p-0.5 px-8 py-2 text-lg font-medium text-white">
-            Blog
-          </button>
+          <GlassButton mobileDisplay="inline-flex" btnText="Blog" />
         </div>
         {/* <blockquote class="my-2 border-l-4 border-orange-400  p-4  ">
           <div className="flex flex-row items-center gap-2">

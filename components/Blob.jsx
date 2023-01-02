@@ -25,7 +25,7 @@ const Shape = () => {
 
       mesh.current.material.uniforms.u_intensity.value = MathUtils.lerp(
         mesh.current.material.uniforms.u_intensity.value,
-        hover.current ? 1 : 0.8,
+        hover.current ? 0.1 : 1,
         0.02
       );
     }
