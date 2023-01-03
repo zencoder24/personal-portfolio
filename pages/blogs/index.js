@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import BlogCard from "../components/BlogCard";
+import BlogCard from "../../components/BlogCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import GlassButton from "../components/GlassButton";
+import GlassButton from "../../components/GlassButton";
+import Link from "next/link";
 
 export class Blogs extends Component {
   render() {
@@ -25,11 +26,18 @@ export class Blogs extends Component {
                 className=" rounded-lg bg-gray-700 py-3 pl-4 text-gray-200  placeholder:font-semibold placeholder:text-gray-400 focus:outline-none  md:w-full"
               />
 
-              <GlassButton mobileDisplay="hidden" btnText="Subscribe" />
+              <GlassButton
+                linkPage="#"
+                mobileDisplay="hidden"
+                btnText="Subscribe"
+              />
 
-              <button className=" rounded-lg bg-gradient-to-tr from-orange-400 to-rose-400 py-3 font-semibold text-gray-200  md:hidden md:px-4  ">
+              <Link
+                href="#"
+                className=" rounded-lg bg-gradient-to-tr from-orange-400 to-rose-400 py-3 font-semibold text-gray-200  md:hidden md:px-4  "
+              >
                 Subscribe
-              </button>
+              </Link>
             </form>
           </div>
 
@@ -59,7 +67,7 @@ export class Blogs extends Component {
                   <input
                     type="text"
                     placeholder="Search"
-                    className="rounded-lg  bg-gray-700 px-3 py-2 pl-8 font-semibold text-gray-200 placeholder:text-gray-400  focus:outline-none"
+                    className="rounded-lg  bg-gray-700 px-3 py-2 pl-10 font-semibold text-gray-200 placeholder:text-gray-400  focus:outline-none"
                   />
                 </div>
               </form>

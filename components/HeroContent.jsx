@@ -1,6 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faThumbTack, faPen } from "@fortawesome/free-solid-svg-icons";
 import GlassButton from "./GlassButton";
+import Link from "next/link";
 
 const HeroContent = () => {
   return (
@@ -28,10 +27,17 @@ const HeroContent = () => {
         </div>
 
         <div className="flex flex-row gap-4">
-          <button className="group  relative inline-flex items-center justify-center overflow-hidden whitespace-nowrap rounded-lg bg-gradient-to-br from-orange-400 to-rose-400 px-8 py-2 text-lg  font-medium  text-white">
+          <Link
+            href="/about-me"
+            className="group  relative inline-flex items-center justify-center overflow-hidden whitespace-nowrap rounded-lg bg-gradient-to-br from-orange-400 to-rose-400 px-8 py-2 text-lg  font-medium  text-white"
+          >
             About Me
-          </button>
-          <GlassButton mobileDisplay="inline-flex" btnText="Blog" />
+          </Link>
+          <GlassButton
+            linkPage="/blogs"
+            mobileDisplay="inline-flex"
+            btnText="Blog"
+          />
         </div>
         {/* <blockquote class="my-2 border-l-4 border-orange-400  p-4  ">
           <div className="flex flex-row items-center gap-2">

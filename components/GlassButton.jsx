@@ -1,10 +1,11 @@
+import Link from "next/link";
 import React from "react";
 
-const GlassButton = ({ mobileDisplay, btnText }) => {
+const GlassButton = ({ linkPage, mobileDisplay, btnText }) => {
   return (
     <>
-      <a
-        href="#_"
+      <Link
+        href={linkPage}
         className={`group relative ${mobileDisplay} items-center justify-center overflow-hidden rounded-md px-8 py-3 font-bold text-gray-200 shadow-2xl md:inline-flex`}
       >
         <span className="absolute inset-0 h-full w-full bg-gradient-to-br from-orange-400 to-rose-400 opacity-0 transition duration-300 ease-out group-hover:opacity-100"></span>
@@ -19,7 +20,7 @@ const GlassButton = ({ mobileDisplay, btnText }) => {
         <span className="absolute inset-0 h-full w-full rounded-md border border-white opacity-10"></span>
         <span className="absolute h-0 w-0 rounded-full bg-white opacity-5 transition-all duration-300 ease-out group-hover:h-56 group-hover:w-56"></span>
         <span className="relative">{btnText}</span>
-      </a>
+      </Link>
     </>
   );
 };
