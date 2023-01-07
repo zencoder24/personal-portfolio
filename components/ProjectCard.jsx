@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import mypic from "../assets/test.jpg";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faEarth } from "@fortawesome/free-solid-svg-icons";
 
