@@ -43,6 +43,14 @@ export default function Nav() {
               Blog
             </Link>
           </li>
+          <li className="my-6 md:my-0">
+            <Link
+              href="/contact"
+              className="cursor-pointer text-xl text-slate-400 hover:text-white "
+            >
+              Contact Me
+            </Link>
+          </li>
         </ul>
         {/* <button className=" flex gap-2 rounded-full bg-gradient-to-r from-orange-400 to-rose-400 px-8 py-3 uppercase text-white duration-500  ">
           <FontAwesomeIcon icon={faCodeFork} />

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import BlogCard from "../../components/BlogCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import GlassButton from "../../components/GlassButton";
@@ -8,7 +7,7 @@ import Link from "next/link";
 export class Blogs extends Component {
   render() {
     return (
-      <div className="my-32 text-slate-200  ">
+      <div className="my-32 text-gray-200  ">
         <div id="blogs-head" className="flex flex-col gap-8 ">
           <div className="flex flex-col gap-y-4">
             <h1 className="text-4xl font-bold md:text-5xl">apex-blogs</h1>
@@ -92,11 +91,7 @@ export class Blogs extends Component {
               </div>
             </div>
 
-            <div className="flex flex-col gap-y-10 md:grid md:grid-cols-2 md:gap-10">
-              <BlogCard />
-              <BlogCard />
-              <BlogCard />
-            </div>
+            <div className="flex flex-col gap-y-10 md:grid md:grid-cols-2 md:gap-10"></div>
           </div>
         </div>
       </div>

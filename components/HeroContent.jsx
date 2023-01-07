@@ -17,7 +17,7 @@ const HeroContent = () => {
               Full-Stack Web Developer
             </span>
           </h1>
-          <hr class="  h-1 w-24 rounded border-0 bg-gradient-to-r from-orange-400 to-rose-400 md:my-4"></hr>
+          <hr className="  h-1 w-24 rounded border-0 bg-gradient-to-r from-orange-400 to-rose-400 md:my-4"></hr>
           <div className="">
             <p className="text-lg font-semibold text-white">
               I love to understand the web and build thing for fun. This is more
