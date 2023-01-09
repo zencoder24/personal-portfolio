@@ -18,45 +18,35 @@ const NavMenu = () => {
         animate={menuOpen ? "open" : "closed"}
         variants={variants}
         transition={{ duration: 0.5 }}
-        className="md:hidden fixed top-0 right-0 bottom-0 w-72 z-[100] shadow-xl  text-white  text-right "
+        className="fixed top-0 right-0 bottom-0 z-[100] w-72 text-right text-gray-100  shadow-xl  md:hidden "
       >
-        <div className="absolute top-0 right-0 bottom-0 w-full bg-garnet opacity-100">
-          <div className="link-menu-container h-full flex flex-col space-y-5 justify-center text-center">
+        <div className="absolute top-0 right-0 bottom-0 w-full bg-[#1b1b1b] opacity-100">
+          <div className="link-menu-container flex h-full flex-col justify-center space-y-5 text-center">
             <a
               onClick={(e) => setMenuOpen(!menuOpen)}
-              className=" text-2xl uppercase hover:text-gold"
-              href="#"
+              className=" text-2xl uppercase text-gray-200 "
+              href="/"
             >
               Home
             </a>
             <a
               onClick={(e) => setMenuOpen(!menuOpen)}
-              className=" text-2xl uppercase hover:text-gold"
-              href="#"
+              className=" text-2xl uppercase text-gray-200 "
+              href="/about-me"
             >
               About
             </a>
             <a
               onClick={(e) => setMenuOpen(!menuOpen)}
-              className=" text-2xl uppercase hover:text-calm-gold"
-              to="#"
+              className=" text-2xl uppercase text-gray-200 "
+              to="/blogs"
             >
-              Resume
-            </a>
-            <a
-              onClick={(e) => setMenuOpen(!menuOpen)}
-              className=" text-2xl uppercase hover:text-calm-gold"
-              to="#"
-            >
-              Projects
-            </a>
-            <a href="#" className=" text-2xl uppercase hover:text-gold">
               Blog
             </a>
             <a
               onClick={(e) => setMenuOpen(!menuOpen)}
-              className=" text-2xl uppercase hover:text-gold"
-              to="#"
+              className=" text-2xl uppercase text-gray-200 "
+              to="/contact-me"
             >
               Contact Me
             </a>
@@ -65,7 +55,7 @@ const NavMenu = () => {
       </motion.nav>
       <motion.div
         onClick={(e) => setMenuOpen(!menuOpen)}
-        className="fixed space-x-2 top-4 right-4 cursor-pointer z-[101] md:hidden"
+        className="fixed top-4 right-4 z-[101] cursor-pointer space-x-2 md:hidden"
       >
         <FontAwesomeIcon
           className={` ${menuOpen ? "hidden" : ""} h-6 text-blackAlt`}
@@ -74,7 +64,7 @@ const NavMenu = () => {
       </motion.div>
       <motion.div
         onClick={(e) => setMenuOpen(!menuOpen)}
-        className="fixed space-x-2 top-4 right-4 cursor-pointer z-[101] md:hidden"
+        className="fixed top-4 right-4 z-[101] cursor-pointer space-x-2 md:hidden"
       >
         <FontAwesomeIcon
           className={` ${menuOpen ? "" : "hidden"} h-6 text-white`}
