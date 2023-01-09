@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import GlassButton from "../../components/GlassButton";
 import Link from "next/link";
+import BlogCard from "../../components/Blog/BlogCard";
 
 export class Blogs extends Component {
   render() {
@@ -91,7 +92,13 @@ export class Blogs extends Component {
               </div>
             </div>
 
-            <div className="flex flex-col gap-y-10 md:grid md:grid-cols-2 md:gap-10"></div>
+            <div className="mx-auto grid w-max grid-cols-1 items-center justify-center gap-y-10 p-4 md:grid-cols-2 lg:grid lg:gap-10 xl:grid-cols-3">
+              <BlogCard />
+              <BlogCard />
+              <BlogCard />
+              <BlogCard />
+              <BlogCard />
+            </div>
           </div>
         </div>
       </div>

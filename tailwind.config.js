@@ -14,5 +14,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-inner-border")],
+  plugins: [require("@tailwindcss/typography")],
 };
