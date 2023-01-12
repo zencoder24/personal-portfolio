@@ -6,6 +6,6 @@ module.exports = {
     appDir: true,
   },
   images: {
-    domains: ["res.cloudinary.com", "img.shields.io"],
+    domains: ["res.cloudinary.com", "img.shields.io", "cdn.sanity.io"],
   },
 };

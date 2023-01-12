@@ -3,17 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import GlassButton from "../../components/GlassButton";
 import Link from "next/link";
-import BlogCard from "../../components/Blog/BlogCard";
-import { previewData } from "next/headers";
-import { groq } from "next-sanity";
-
-const query = groq`
-  *[_type=='blogpost']{
-    ...,
-    author ->,
-    categories[]->
-  } | order(_createdAt desc)
-`;
+import BlogContainer from "../../components/Blog/BlogContainer";
 
 export default async function Blogs() {
   return (
@@ -54,9 +44,9 @@ export default async function Blogs() {
           {/*Category Select for Mobile */}
           <select
             id="categories"
-            class="mb-12 block w-full rounded-lg  bg-gray-700 p-2.5  text-sm text-gray-200 focus:outline-none md:hidden"
+            className="mb-12 block w-full rounded-lg  bg-gray-700 p-2.5  text-sm text-gray-200 focus:outline-none md:hidden"
           >
-            <option selected className="font-semibold text-gray-400">
+            <option defaultValue className="font-semibold text-gray-400">
               View All
             </option>
             <option value="US">React</option>
@@ -100,14 +90,7 @@ export default async function Blogs() {
               </ul>
             </div>
           </div>
-
-          <div className="mx-auto grid w-max grid-cols-1 items-center justify-center gap-y-10 p-4 md:grid-cols-2 lg:grid lg:gap-10 xl:grid-cols-3">
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-          </div>
+          <BlogContainer />
         </div>
       </div>
     </div>
