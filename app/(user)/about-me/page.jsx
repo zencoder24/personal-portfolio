@@ -1,8 +1,8 @@
 import React from "react";
-import { projectsData } from "../assets/projects/projects";
-import { skillData } from "../assets/skills";
-import { toolsData } from "../assets/tools";
-import ProjectCard from "../components/ProjectCard";
+import { projectsData } from "../../../assets/projects/projects";
+import { skillData } from "../../../assets/skills";
+import { toolsData } from "../../../assets/tools";
+import ProjectCard from "../../components/ProjectCard";
 
 const About = () => {
   return (

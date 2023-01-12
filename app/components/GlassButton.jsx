@@ -12,9 +12,9 @@ const GlassButton = ({ linkPage, mobileDisplay, btnText }) => {
         {/*<!-- Top glass gradient -->*/}
         <span className="absolute top-0 left-0 h-1/3 w-full bg-gradient-to-b from-white to-transparent opacity-5"></span>
         {/* <!-- Bottom gradient --> */}
-        <span class="absolute bottom-0 left-0 h-1/3 w-full bg-gradient-to-t from-white to-transparent opacity-5"></span>
+        <span className="absolute bottom-0 left-0 h-1/3 w-full bg-gradient-to-t from-white to-transparent opacity-5"></span>
         {/* <!-- Left gradient --> */}
-        <span class="absolute bottom-0 left-0 h-full w-4 bg-gradient-to-r from-white to-transparent opacity-5"></span>
+        <span className="absolute bottom-0 left-0 h-full w-4 bg-gradient-to-r from-white to-transparent opacity-5"></span>
         {/* <!-- Right gradient --> */}
         <span className="absolute bottom-0 right-0 h-full w-4 bg-gradient-to-l from-white to-transparent opacity-5"></span>
         <span className="absolute inset-0 h-full w-full rounded-md border border-white opacity-10"></span>

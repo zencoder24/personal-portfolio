@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { meshBounds } from "@react-three/drei";

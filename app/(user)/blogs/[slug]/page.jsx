@@ -1,6 +1,6 @@
 import React from "react";
-import code from "../../public/code.jpg";
-import avatar from "../../public/avatar-img.jpg";
+import code from "../../../../public/code.jpg";
+import avatar from "../../../../public/avatar-img.jpg";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faShare, faComment } from "@fortawesome/free-solid-svg-icons";

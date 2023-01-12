@@ -1,6 +1,5 @@
 import React from "react";
-import code from "../../public/code2.jpg";
-import GlassButton from "../GlassButton";
+import code from "../../../public/code.jpg";
 
 const BlogCard = () => {
   return (

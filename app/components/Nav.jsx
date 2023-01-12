@@ -1,7 +1,6 @@
+"use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faCodeFork, faStar } from "@fortawesome/free-solid-svg-icons";
 
 export default function Nav() {
   const [navMenuShown, setNavMenuShown] = useState(false);

@@ -1,6 +1,6 @@
+"use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
@@ -24,7 +24,7 @@ const NavMenu = () => {
           <div className="link-menu-container flex h-full flex-col justify-center space-y-5 text-center">
             <a
               onClick={(e) => setMenuOpen(!menuOpen)}
-              className=" text-2xl uppercase text-gray-200 "
+              className=" text-gray- text-2xl uppercase   "
               href="/"
             >
               Home

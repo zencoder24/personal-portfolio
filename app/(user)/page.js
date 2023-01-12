@@ -1,8 +1,8 @@
 import React from "react";
-import Blob from "../components/Blob";
 import HeroContent from "../components/HeroContent";
+import Blob from "../components/Blob";
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <div className="mt-36 flex w-full flex-col items-center md:flex-row">
@@ -11,4 +11,6 @@ export default function Home() {
       </div>
     </>
   );
-}
+};
+
+export default Home;
