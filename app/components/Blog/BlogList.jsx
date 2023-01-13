@@ -12,6 +12,7 @@ const BlogList = ({ blogs }) => {
           description={blog.description}
           categories={blog.categories}
           createdAt={blog._createdAt}
+          slug={blog.slug.current}
         />
       ))}
     </div>

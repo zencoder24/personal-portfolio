@@ -2,6 +2,7 @@ import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
 import { visionTool } from "@sanity/vision";
 import { schemaTypes } from "./schemas";
+import { scheduledPublishing } from "@sanity/scheduled-publishing";
 import StudioNavbar from "./app/components/Studio/StudioNavbar";
 
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
@@ -15,7 +16,7 @@ export default defineConfig({
   projectId,
   dataset,
 
-  plugins: [deskTool(), visionTool()],
+  plugins: [deskTool(), scheduledPublishing(), visionTool()],
 
   schema: {
     types: schemaTypes,

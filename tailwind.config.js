@@ -6,5 +6,8 @@ module.exports = {
     "./components/**/*.{html,js,ts,jsx,tsx}",
   ],
   theme: {},
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/line-clamp"),
+  ],
 };
