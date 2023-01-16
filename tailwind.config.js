@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         nunito: ["var(--font-nunito)"],
         lora: ["var(--font-lora)"],
+        pacifico: ["var(--font-pacifico)"],
       },
     },
   },

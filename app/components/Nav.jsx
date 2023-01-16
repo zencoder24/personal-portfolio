@@ -10,7 +10,7 @@ export default function Nav() {
       <div className="flex items-center justify-between">
         <Link
           href="/"
-          className="cursor-pointer bg-gradient-to-tr from-orange-400 to-rose-400 bg-clip-text  text-4xl font-extrabold uppercase text-transparent "
+          className="cursor-pointer font-pacifico text-4xl  font-extrabold uppercase text-orange-400 text-transparent  "
         >
           RG.
         </Link>
