@@ -15,9 +15,9 @@ const BlogCard = ({
   return (
     <ClientRoute route={`/blogs/${slug}`}>
       <div
-        className="card relative flex h-80 w-60 cursor-pointer items-end overflow-hidden rounded-2xl border-[2px] border-[#ccc] bg-gradient-to-b from-black/0 to-black/100 bg-center text-2xl text-gray-200 shadow-sm
+        className="card relative flex h-80 w-60 cursor-pointer items-end overflow-hidden rounded-2xl border-[2px] border-[#ccc] bg-gradient-to-b from-black/0 to-black/100 bg-center text-2xl text-white shadow-sm
        before:absolute before:left-[-50%] before:top-[-50%] before:-z-10 before:h-[250%] before:w-[250%] before:rounded-[50%]
-       before:bg-gray-300 before:content-[''] after:absolute after:left-[-50%] after:top-[-50%] after:-z-10 after:h-[200%] after:w-[200%] after:rounded-[50%] after:bg-white after:content-[''] hover:rotate-0 hover:text-orange-400"
+       before:bg-white before:content-[''] after:absolute after:left-[-50%] after:top-[-50%] after:-z-10 after:h-[200%] after:w-[200%] after:rounded-[50%] after:bg-white after:content-[''] hover:rotate-0 hover:text-primary"
         style={{
           backgroundImage: `url(${urlFor(featImg).url()})`,
           backgroundSize: "cover",
@@ -26,13 +26,13 @@ const BlogCard = ({
       >
         <div className=" flex h-full w-full items-end backdrop-brightness-50   hover:backdrop-brightness-100">
           <div className="m-4">
-            <h1 className=" m-0 font-nunito text-2xl font-bold leading-[1.2em]">
+            <h1 className=" m-0 font-primary text-2xl font-bold leading-[1.2em]">
               {title}
             </h1>
-            <p className=" my-2 font-lora text-sm leading-6 line-clamp-2">
+            <p className=" my-2 font-secondary text-sm leading-6 line-clamp-2">
               {description}
             </p>
-            <div className="date absolute top-0 right-0 p-4 font-nunito text-sm font-semibold leading-4 opacity-80">
+            <div className="date absolute top-0 right-0 p-4 font-primary text-sm font-semibold leading-4 opacity-80">
               {new Date(createdAt).toLocaleDateString("en-US", {
                 day: "numeric",
                 month: "short",
@@ -43,7 +43,7 @@ const BlogCard = ({
               {categories.map((category) => (
                 <div
                   key={category._id}
-                  className="tag mr-2 rounded bg-white/50 px-2 py-0 font-nunito text-xs leading-6"
+                  className="tag mr-2 rounded bg-white/50 px-2 py-0 font-primary text-xs leading-6"
                 >
                   <p>{category.title}</p>
                 </div>

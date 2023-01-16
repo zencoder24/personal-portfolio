@@ -19,7 +19,7 @@ export default async function BlogContainer() {
       <PreviewSuspense
         fallback={
           <div>
-            <p className="animate-pulse text-center text-lg text-orange-400">
+            <p className="animate-pulse text-center text-lg text-primary">
               Loading Blogs....
             </p>
           </div>

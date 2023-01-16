@@ -5,11 +5,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 const StudioNavbar = (props) => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-black ">
       <div className="py-4 px-4">
         <Link
           href="/"
-          className="flex cursor-pointer items-center gap-x-2 text-orange-400"
+          className="flex cursor-pointer items-center gap-x-2 text-primary"
         >
           <FontAwesomeIcon icon={faArrowLeft} className="h-6 w-6" />
           Go Back to Website

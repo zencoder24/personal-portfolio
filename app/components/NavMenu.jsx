@@ -18,34 +18,34 @@ const NavMenu = () => {
         animate={menuOpen ? "open" : "closed"}
         variants={variants}
         transition={{ duration: 0.5 }}
-        className="fixed top-0 right-0 bottom-0 z-[100] w-72 text-right text-gray-100  shadow-xl  md:hidden "
+        className="fixed top-0 right-0 bottom-0 z-[100] w-72 text-right text-white  shadow-xl  md:hidden "
       >
         <div className="absolute top-0 right-0 bottom-0 w-full bg-[#1b1b1b] opacity-100">
           <div className="link-menu-container flex h-full flex-col justify-center space-y-5 text-center">
             <a
               onClick={(e) => setMenuOpen(!menuOpen)}
-              className=" text-gray- cursor-pointer text-2xl uppercase hover:text-orange-400   "
+              className="  cursor-pointer text-2xl uppercase hover:text-primary   "
               href="/"
             >
               Home
             </a>
             <a
               onClick={(e) => setMenuOpen(!menuOpen)}
-              className=" cursor-pointer text-2xl uppercase text-gray-200 hover:text-orange-400"
+              className=" cursor-pointer text-2xl uppercase text-white hover:text-primary"
               href="/about-me"
             >
               About
             </a>
             <a
               onClick={(e) => setMenuOpen(!menuOpen)}
-              className=" cursor-pointer text-2xl uppercase text-gray-200 hover:text-orange-400"
+              className=" cursor-pointer text-2xl uppercase text-white hover:text-primary"
               to="/blogs"
             >
               Blog
             </a>
             <a
               onClick={(e) => setMenuOpen(!menuOpen)}
-              className=" text-gray-20 cursor-pointer text-2xl uppercase hover:text-orange-400 "
+              className=" cursor-pointer text-2xl uppercase text-white hover:text-primary "
               to="/contact-me"
             >
               Contact Me
@@ -58,7 +58,7 @@ const NavMenu = () => {
         className="fixed top-4 right-4 z-[101] cursor-pointer space-x-2 md:hidden"
       >
         <FontAwesomeIcon
-          className={` ${menuOpen ? "hidden" : ""} h-6 text-gray-300`}
+          className={` ${menuOpen ? "hidden" : ""} h-6 text-white`}
           icon={faBars}
         />
       </motion.div>

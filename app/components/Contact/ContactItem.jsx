@@ -12,11 +12,11 @@ const icons = {
 const ContactItem = ({ icon, contactData }) => {
   const contactIcon = icons[icon];
   return (
-    <div className="contactItem row my-4 flex items-center space-x-4 rounded-lg bg-gray-700 py-2 px-4 text-gray-200">
+    <div className="contactItem row my-4 flex items-center space-x-4 rounded-lg bg-gray-700 py-2 px-4 text-white">
       <div className=" icon-container bg-calm-green rounded-full py-2 px-3">
         <FontAwesomeIcon className=" bg-gray-700" icon={contactIcon} />
       </div>
-      <div className="contact-data font-lora  ">{contactData}</div>
+      <div className="contact-data font-secondary  ">{contactData}</div>
     </div>
   );
 };

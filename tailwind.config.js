@@ -8,9 +8,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        nunito: ["var(--font-nunito)"],
-        lora: ["var(--font-lora)"],
-        pacifico: ["var(--font-pacifico)"],
+        primary: ["var(--font-nunito)"],
+        secondary: ["var(--font-lora)"],
+        logo: ["var(--font-pacifico)"],
+      },
+      colors: {
+        primary: "#fb923c",
+        secondary: "#fb7185",
+        white: "#d4d4d4",
       },
     },
   },

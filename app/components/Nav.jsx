@@ -6,17 +6,17 @@ export default function Nav() {
   const [navMenuShown, setNavMenuShown] = useState(false);
 
   return (
-    <nav className="hidden py-8  md:flex md:items-center md:justify-between">
+    <nav className="hidden py-5  md:flex md:items-center md:justify-between">
       <div className="flex items-center justify-between">
         <Link
           href="/"
-          className="cursor-pointer font-pacifico text-4xl  font-extrabold uppercase text-orange-400 text-transparent  "
+          className="cursor-pointer bg-gradient-to-tr from-primary  to-secondary bg-clip-text pb-8 font-logo text-4xl font-extrabold uppercase leading-relaxed text-transparent  "
         >
           RG.
         </Link>
       </div>
 
-      <div id="right-nav" className="flex flex-row gap-24 font-nunito">
+      <div id="right-nav" className="flex flex-row gap-24 font-primary">
         <ul className=" left-0 mr-12 gap-6 py-4 pl-12 opacity-0 md:static md:z-auto md:flex md:w-auto md:items-center md:py-0 md:pl-0 md:opacity-100">
           <li className="my-6 md:my-0">
             <Link
@@ -51,7 +51,7 @@ export default function Nav() {
             </Link>
           </li>
         </ul>
-        {/* <button className=" flex gap-2 rounded-full bg-gradient-to-r from-orange-400 to-rose-400 px-8 py-3 uppercase text-white duration-500  ">
+        {/* <button className=" flex gap-2 rounded-full bg-gradient-to-r from-primary to-secondary px-8 py-3 uppercase text-white duration-500  ">
           <FontAwesomeIcon icon={faCodeFork} />
           <FontAwesomeIcon icon={faStar} />
         </button> */}

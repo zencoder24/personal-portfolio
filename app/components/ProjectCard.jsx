@@ -23,18 +23,18 @@ const ProjectCard = ({
       </div>
       <div className="my-2">
         <a href="#">
-          <h5 className=" mb-4 text-center font-nunito text-2xl font-bold tracking-tight text-slate-200">
+          <h5 className=" mb-4 text-center font-primary text-2xl font-bold tracking-tight text-slate-200">
             {proj_name}
           </h5>
         </a>
-        <p className="mb-3 text-center font-lora  font-normal text-gray-300">
+        <p className="mb-3 text-center font-secondary  font-normal text-white">
           {proj_desc}
         </p>
         <div className="project-links flex flex-col items-center">
           <a
             href={src_code}
             target="_blank"
-            className="text-md inline-flex items-center gap-2 text-center align-middle font-bold text-slate-200 hover:text-orange-400   focus:outline-none "
+            className="text-md inline-flex items-center gap-2 text-center align-middle font-bold text-slate-200 hover:text-primary   focus:outline-none "
           >
             Source Code
             <FontAwesomeIcon icon={faCode} />
@@ -42,7 +42,7 @@ const ProjectCard = ({
           <a
             href={live_site}
             target="_blank"
-            className="text-md inline-flex items-center gap-2 text-center align-middle font-bold text-slate-200 hover:text-orange-400   focus:outline-none "
+            className="text-md inline-flex items-center gap-2 text-center align-middle font-bold text-slate-200 hover:text-primary   focus:outline-none "
           >
             Live Site
             <FontAwesomeIcon icon={faEarth} />

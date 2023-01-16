@@ -68,7 +68,7 @@ const ContactForm = () => {
     return (
       <div
         id="toast"
-        className="space-x mx-auto my-6 flex w-full max-w-xs items-center space-x-4 divide-x  divide-gray-200  rounded-lg bg-red-500 p-4 text-gray-200 shadow "
+        className="space-x mx-auto my-6 flex w-full max-w-xs items-center space-x-4 divide-x  divide-white  rounded-lg bg-red-500 p-4 text-white shadow "
         role="alert"
       >
         <FontAwesomeIcon icon={icon} />
@@ -94,13 +94,13 @@ const ContactForm = () => {
         ) : null}
         <div className="form-group mb-8 w-full">
           <label
-            className=" font-nunito text-xl font-bold text-orange-400"
+            className=" font-primary text-xl font-bold text-primary"
             htmlFor="name"
           >
             Your Name
           </label>
           <input
-            className="mt-4 w-full rounded-lg border-none  bg-gray-700 p-5 font-nunito text-lg text-gray-200 outline-none"
+            className="mt-4 w-full rounded-lg border-none  bg-gray-700 p-5 font-primary text-lg text-white outline-none"
             type="text"
             id="name"
             name="user_name"
@@ -109,7 +109,7 @@ const ContactForm = () => {
             onChange={formik.handleChange}
           />
           {formik.touched.user_name && formik.errors.user_name ? (
-            <p className=" font-nunito text-xs text-red-600">
+            <p className=" font-primary text-xs text-red-600">
               {formik.errors.user_name}
             </p>
           ) : null}
@@ -117,13 +117,13 @@ const ContactForm = () => {
 
         <div className="form-group mb-8 w-full">
           <label
-            className=" font-nunito text-xl font-bold text-orange-400"
+            className=" font-primary text-xl font-bold text-primary"
             htmlFor="email"
           >
             Your Email
           </label>
           <input
-            className="mt-4 w-full rounded-lg border-none  bg-gray-700 p-5 font-nunito text-lg text-gray-200 outline-none"
+            className="mt-4 w-full rounded-lg border-none  bg-gray-700 p-5 font-primary text-lg text-white outline-none"
             type="text"
             id="email"
             name="user_email"
@@ -136,15 +136,12 @@ const ContactForm = () => {
           ) : null}
         </div>
 
-        <div className="form-group mb-8 w-full font-nunito">
-          <label
-            className=" text-xl font-bold  text-orange-400"
-            htmlFor="message"
-          >
+        <div className="form-group mb-8 w-full font-primary">
+          <label className=" text-xl font-bold  text-primary" htmlFor="message">
             Message
           </label>
           <textarea
-            className="mt-4 min-h-[15rem] w-full resize-y rounded-lg  border-none bg-gray-700 p-5 text-base text-gray-200 outline-none"
+            className="mt-4 min-h-[15rem] w-full resize-y rounded-lg  border-none bg-gray-700 p-5 text-base text-white outline-none"
             type="text"
             id="message"
             name="message"
@@ -159,7 +156,7 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className=" my-auto mx-0 cursor-pointer rounded-lg border-none bg-gradient-to-tr from-orange-400 to-rose-400 py-4 px-16 font-nunito text-lg outline-none  "
+          className=" my-auto mx-0 cursor-pointer rounded-lg border-none bg-gradient-to-tr from-primary to-secondary py-4 px-16 font-primary text-lg outline-none  "
         >
           Send Message
         </button>
