@@ -3,6 +3,7 @@ import { projectsData } from "../../../assets/projects/projects";
 import { skillData } from "../../../assets/skills";
 import { toolsData } from "../../../assets/tools";
 import ProjectCard from "../../components/ProjectCard";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -26,8 +27,13 @@ const About = () => {
               I also like writing blogs entreies related to the stuff that I
               have learned over the years in Web Development, so it can help
               other people of the Dev Community. Please head over to my{" "}
-              <span className="text-primary underline">Blog</span> and let me
-              know what you think.
+              <Link
+                href="/blogs"
+                className="cursor-pointer text-primary underline"
+              >
+                Blog
+              </Link>{" "}
+              and let me know what you think.
             </p>
             <p className="font-secondary text-lg">
               I'm open to Job opportunities where I can contribute, learn and
