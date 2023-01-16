@@ -15,7 +15,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "@next/font": "13.1.0",
+    "@next/font": "^13.1.0",
     "@portabletext/react": "^2.0.0",
     "@react-three/drei": "^9.48.1",
     "@react-three/fiber": "^8.9.1",

@@ -93,11 +93,14 @@ const ContactForm = () => {
           />
         ) : null}
         <div className="form-group mb-8 w-full">
-          <label className=" text-xl font-bold text-orange-400" htmlFor="name">
+          <label
+            className=" font-nunito text-xl font-bold text-orange-400"
+            htmlFor="name"
+          >
             Your Name
           </label>
           <input
-            className="mt-4 w-full rounded-lg  border-none bg-gray-700 p-5 text-lg text-gray-200 outline-none"
+            className="mt-4 w-full rounded-lg border-none  bg-gray-700 p-5 font-nunito text-lg text-gray-200 outline-none"
             type="text"
             id="name"
             name="user_name"
@@ -106,16 +109,21 @@ const ContactForm = () => {
             onChange={formik.handleChange}
           />
           {formik.touched.user_name && formik.errors.user_name ? (
-            <p className=" text-xs text-red-600">{formik.errors.user_name}</p>
+            <p className=" font-nunito text-xs text-red-600">
+              {formik.errors.user_name}
+            </p>
           ) : null}
         </div>
 
         <div className="form-group mb-8 w-full">
-          <label className=" text-xl font-bold text-orange-400" htmlFor="email">
+          <label
+            className=" font-nunito text-xl font-bold text-orange-400"
+            htmlFor="email"
+          >
             Your Email
           </label>
           <input
-            className="mt-4 w-full rounded-lg  border-none bg-gray-700 p-5 text-lg text-gray-200 outline-none"
+            className="mt-4 w-full rounded-lg border-none  bg-gray-700 p-5 font-nunito text-lg text-gray-200 outline-none"
             type="text"
             id="email"
             name="user_email"
@@ -128,9 +136,9 @@ const ContactForm = () => {
           ) : null}
         </div>
 
-        <div className="form-group mb-8 w-full">
+        <div className="form-group mb-8 w-full font-nunito">
           <label
-            className=" text-xl font-bold text-orange-400"
+            className=" text-xl font-bold  text-orange-400"
             htmlFor="message"
           >
             Message
@@ -151,7 +159,7 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className=" my-auto mx-0 cursor-pointer rounded-lg border-none bg-gradient-to-tr from-orange-400 to-rose-400 py-4 px-16 text-lg outline-none  "
+          className=" my-auto mx-0 cursor-pointer rounded-lg border-none bg-gradient-to-tr from-orange-400 to-rose-400 py-4 px-16 font-nunito text-lg outline-none  "
         >
           Send Message
         </button>

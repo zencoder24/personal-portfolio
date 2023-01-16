@@ -7,7 +7,7 @@ const contact = () => {
     <div>
       <section id="contact-me" className="my-32 flex flex-col text-gray-200">
         <div id="contact-me-title-group" className="mb-12 ">
-          <h2 className=" text-4xl font-bold text-white md:text-5xl">
+          <h2 className=" font-nunito text-4xl font-bold text-white md:text-5xl">
             Contact Me
           </h2>
         </div>

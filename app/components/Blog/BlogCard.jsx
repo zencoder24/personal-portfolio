@@ -26,11 +26,13 @@ const BlogCard = ({
       >
         <div className=" flex h-full w-full items-end backdrop-brightness-50   hover:backdrop-brightness-100">
           <div className="m-4">
-            <h1 className=" m-0 text-2xl font-bold leading-[1.2em]">{title}</h1>
-            <p className=" my-2 text-sm leading-6 line-clamp-2">
+            <h1 className=" m-0 font-nunito text-2xl font-bold leading-[1.2em]">
+              {title}
+            </h1>
+            <p className=" my-2 font-lora text-sm leading-6 line-clamp-2">
               {description}
             </p>
-            <div className="date absolute top-0 right-0 p-4 text-sm font-semibold leading-4 opacity-80">
+            <div className="date absolute top-0 right-0 p-4 font-nunito text-sm font-semibold leading-4 opacity-80">
               {new Date(createdAt).toLocaleDateString("en-US", {
                 day: "numeric",
                 month: "short",
@@ -41,7 +43,7 @@ const BlogCard = ({
               {categories.map((category) => (
                 <div
                   key={category._id}
-                  className="tag mr-2 rounded bg-white/50 px-2 py-0 text-xs leading-6"
+                  className="tag mr-2 rounded bg-white/50 px-2 py-0 font-nunito text-xs leading-6"
                 >
                   <p>{category.title}</p>
                 </div>

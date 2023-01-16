@@ -16,7 +16,7 @@ export default function Nav() {
         </Link>
       </div>
 
-      <div id="right-nav" className="flex flex-row gap-24">
+      <div id="right-nav" className="flex flex-row gap-24 font-nunito">
         <ul className=" left-0 mr-12 gap-6 py-4 pl-12 opacity-0 md:static md:z-auto md:flex md:w-auto md:items-center md:py-0 md:pl-0 md:opacity-100">
           <li className="my-6 md:my-0">
             <Link

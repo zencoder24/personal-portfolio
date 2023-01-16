@@ -24,28 +24,28 @@ const NavMenu = () => {
           <div className="link-menu-container flex h-full flex-col justify-center space-y-5 text-center">
             <a
               onClick={(e) => setMenuOpen(!menuOpen)}
-              className=" text-gray- text-2xl uppercase   "
+              className=" text-gray- cursor-pointer text-2xl uppercase hover:text-orange-400   "
               href="/"
             >
               Home
             </a>
             <a
               onClick={(e) => setMenuOpen(!menuOpen)}
-              className=" text-2xl uppercase text-gray-200 "
+              className=" cursor-pointer text-2xl uppercase text-gray-200 hover:text-orange-400"
               href="/about-me"
             >
               About
             </a>
             <a
               onClick={(e) => setMenuOpen(!menuOpen)}
-              className=" text-2xl uppercase text-gray-200 "
+              className=" cursor-pointer text-2xl uppercase text-gray-200 hover:text-orange-400"
               to="/blogs"
             >
               Blog
             </a>
             <a
               onClick={(e) => setMenuOpen(!menuOpen)}
-              className=" text-2xl uppercase text-gray-200 "
+              className=" text-gray-20 cursor-pointer text-2xl uppercase hover:text-orange-400 "
               to="/contact-me"
             >
               Contact Me
@@ -58,7 +58,7 @@ const NavMenu = () => {
         className="fixed top-4 right-4 z-[101] cursor-pointer space-x-2 md:hidden"
       >
         <FontAwesomeIcon
-          className={` ${menuOpen ? "hidden" : ""} h-6 text-blackAlt`}
+          className={` ${menuOpen ? "hidden" : ""} h-6 text-gray-300`}
           icon={faBars}
         />
       </motion.div>

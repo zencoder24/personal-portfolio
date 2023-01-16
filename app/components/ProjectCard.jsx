@@ -23,11 +23,11 @@ const ProjectCard = ({
       </div>
       <div className="my-2">
         <a href="#">
-          <h5 className=" mb-4 text-center text-2xl font-bold tracking-tight text-slate-200">
+          <h5 className=" mb-4 text-center font-nunito text-2xl font-bold tracking-tight text-slate-200">
             {proj_name}
           </h5>
         </a>
-        <p className="mb-3 text-center font-normal  dark:text-slate-400">
+        <p className="mb-3 text-center font-lora  font-normal text-gray-300">
           {proj_desc}
         </p>
         <div className="project-links flex flex-col items-center">

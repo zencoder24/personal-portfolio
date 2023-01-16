@@ -5,7 +5,14 @@ module.exports = {
     "./pages/**/*.{html,js,ts,jsx,tsx}",
     "./components/**/*.{html,js,ts,jsx,tsx}",
   ],
-  theme: {},
+  theme: {
+    extend: {
+      fontFamily: {
+        nunito: ["var(--font-nunito)"],
+        lora: ["var(--font-lora)"],
+      },
+    },
+  },
   plugins: [
     require("@tailwindcss/typography"),
     require("@tailwindcss/line-clamp"),

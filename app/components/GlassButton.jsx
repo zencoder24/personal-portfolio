@@ -6,7 +6,7 @@ const GlassButton = ({ linkPage, mobileDisplay, btnText }) => {
     <>
       <Link
         href={linkPage}
-        className={`group relative ${mobileDisplay} items-center justify-center overflow-hidden whitespace-nowrap rounded-md px-8 py-3 text-center font-bold text-gray-200 shadow-2xl md:inline-flex`}
+        className={`group relative ${mobileDisplay} items-center justify-center overflow-hidden whitespace-nowrap rounded-md px-8 py-3 text-center font-nunito font-bold text-gray-200 shadow-2xl md:inline-flex`}
       >
         <span className="absolute inset-0 h-full w-full bg-gradient-to-br from-orange-400 to-rose-400 opacity-0 transition duration-300 ease-out group-hover:opacity-100"></span>
         {/*<!-- Top glass gradient -->*/}

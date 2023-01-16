@@ -16,7 +16,7 @@ const ContactItem = ({ icon, contactData }) => {
       <div className=" icon-container bg-calm-green rounded-full py-2 px-3">
         <FontAwesomeIcon className=" bg-gray-700" icon={contactIcon} />
       </div>
-      <div className="contact-data">{contactData}</div>
+      <div className="contact-data font-lora  ">{contactData}</div>
     </div>
   );
 };

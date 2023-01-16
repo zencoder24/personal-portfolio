@@ -27,14 +27,18 @@ async function BlogPost({ params: { slug } }) {
           {blog.categories.map((category) => (
             <div
               key={category._id}
-              className="text-base text-orange-400 md:text-lg"
+              className="font-nunito text-base text-orange-400 md:text-lg"
             >
               <h3>#{category.title}</h3>
             </div>
           ))}
         </div>
-        <h1 className=" text-4xl font-bold md:text-5xl">{blog.title}</h1>
-        <p className=" text-base italic md:text-lg">{blog.description}</p>
+        <h1 className=" font-nunito text-4xl font-bold md:text-5xl">
+          {blog.title}
+        </h1>
+        <p className=" font-lora text-base italic md:text-lg">
+          {blog.description}
+        </p>
       </div>
       <div className="my-12 flex flex-col items-center gap-y-4 md:flex-row md:items-center md:justify-between">
         <div className=" flex flex-row items-center gap-x-2">
@@ -45,8 +49,8 @@ async function BlogPost({ params: { slug } }) {
             className="h-12 w-12 rounded-full"
           />
           <div id="author-date">
-            <h3>{blog.author.name}</h3>
-            <p className=" italic ">
+            <h3 className="font-lora font-semibold">{blog.author.name}</h3>
+            <p className=" font-lora italic ">
               Written on:{" "}
               {new Date(blog._createdAt).toLocaleDateString("en-US", {
                 day: "numeric",
@@ -57,11 +61,11 @@ async function BlogPost({ params: { slug } }) {
           </div>
         </div>
         <div id="social-interaction" className="flex flex-row gap-x-4">
-          <button className="flex flex-row items-center gap-x-2 rounded-full border border-gray-400 px-4 py-2">
+          <button className="flex flex-row items-center gap-x-2 rounded-full border border-gray-400 px-4 py-2 font-lora">
             <FontAwesomeIcon icon={faHeart} />
             <span>10</span>
           </button>
-          <button className="flex flex-row items-center gap-x-2 rounded-full border border-gray-400 px-4 py-2">
+          <button className="flex flex-row items-center gap-x-2 rounded-full border border-gray-400 px-4 py-2 font-lora">
             <FontAwesomeIcon icon={faComment} />
             <span>15</span>
           </button>
