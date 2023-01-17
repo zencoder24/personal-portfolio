@@ -16,6 +16,10 @@ const ContactForm = () => {
   const [messageSent, setMessageSent] = useState(false);
   const [serverError, setServerError] = useState(false);
 
+  const serviceID = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID;
+  const templateID = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID;
+  const emailPublicKey = process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY;
+
   const form = useRef();
   //Using the Formik Library for Form validation
   const formik = useFormik({
@@ -36,12 +40,7 @@ const ContactForm = () => {
     onSubmit: (values, { resetForm }) => {
       try {
         emailjs
-          .sendForm(
-            process.env.REACT_APP_EMAIL_SERVICE_ID,
-            process.env.REACT_APP_EMAIL_TEMPLATE_ID,
-            form.current,
-            process.env.REACT_APP_EMAIL_PUBLIC_KEY
-          )
+          .sendForm(serviceID, templateID, form.current, emailPublicKey)
           .then(() => {
             setServerError(false);
             setMessageSent(true);
@@ -53,6 +52,7 @@ const ContactForm = () => {
           });
       } catch {
         setServerError(true);
+        console.log("Fail here");
         setMessageSent(false);
         pageReset();
       }
@@ -64,11 +64,11 @@ const ContactForm = () => {
   };
 
   //Reusable Toast Component
-  const MessageToast = ({ message, icon }) => {
+  const MessageToast = ({ message, icon, backGColor }) => {
     return (
       <div
         id="toast"
-        className="space-x mx-auto my-6 flex w-full max-w-xs items-center space-x-4 divide-x  divide-white  rounded-lg bg-red-500 p-4 text-white shadow "
+        className={`${backGColor} space-x mx-auto my-6 flex w-full max-w-xs items-center space-x-4 divide-x  divide-white  rounded-lg  p-4 text-white shadow `}
         role="alert"
       >
         <FontAwesomeIcon icon={icon} />
@@ -82,12 +82,14 @@ const ContactForm = () => {
       <form className="my-4 w-full" ref={form} onSubmit={formik.handleSubmit}>
         {messageSent ? (
           <MessageToast
+            backGColor="bg-green-500"
             message="Message Sent Successfully"
             icon={faPaperPlane}
           />
         ) : null}
         {serverError ? (
           <MessageToast
+            backGColor="bg-red-500"
             message="Server Error Please Try Again Later"
             icon={faCircleExclamation}
           />
@@ -109,7 +111,7 @@ const ContactForm = () => {
             onChange={formik.handleChange}
           />
           {formik.touched.user_name && formik.errors.user_name ? (
-            <p className=" font-primary text-xs text-red-600">
+            <p className=" font-primary text-xs font-semibold text-red-500">
               {formik.errors.user_name}
             </p>
           ) : null}
@@ -132,7 +134,9 @@ const ContactForm = () => {
             onChange={formik.handleChange}
           />
           {formik.touched.user_email && formik.errors.user_email ? (
-            <p className=" text-xs text-red-600">{formik.errors.user_email}</p>
+            <p className=" text-xs font-semibold text-red-500">
+              {formik.errors.user_email}
+            </p>
           ) : null}
         </div>
 
@@ -150,7 +154,9 @@ const ContactForm = () => {
             onChange={formik.handleChange}
           />
           {formik.touched.message && formik.errors.message ? (
-            <p className=" text-xs text-red-600">{formik.errors.message}</p>
+            <p className=" text-xs font-semibold text-red-500">
+              {formik.errors.message}
+            </p>
           ) : null}
         </div>
 
