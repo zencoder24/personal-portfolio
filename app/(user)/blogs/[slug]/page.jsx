@@ -8,6 +8,20 @@ import urlFor from "../../../../lib/urlFor";
 import { PortableText } from "@portabletext/react";
 import { RichTextComponents } from "../../../components/Blog/RichTextComponents";
 
+export async function generateStaticParams() {
+  const query = groq`*[_type =='blogpost']
+  {
+    slug
+  }
+  `;
+
+  const slugs = await client.fetch(query);
+  const slugRoutes = slugs.map((slug) => slug.slug.current);
+  return slugRoutes.map((slug) => ({
+    slug,
+  }));
+}
+
 async function BlogPost({ params: { slug } }) {
   const query = groq`
   *[_type == 'blogpost' && slug.current == $slug] [0]
@@ -61,16 +75,17 @@ async function BlogPost({ params: { slug } }) {
           </div>
         </div>
         <div id="social-interaction" className="flex flex-row gap-x-4">
-          <button className="flex flex-row items-center gap-x-2 rounded-full border border-white px-4 py-2 font-secondary">
+          {/* <button className="flex flex-row items-center gap-x-2 rounded-full border border-white px-4 py-2 font-secondary">
             <FontAwesomeIcon icon={faHeart} />
             <span>10</span>
           </button>
           <button className="flex flex-row items-center gap-x-2 rounded-full border border-white px-4 py-2 font-secondary">
             <FontAwesomeIcon icon={faComment} />
             <span>15</span>
-          </button>
-          <button className="">
+          </button> */}
+          <button className="flex flex-row items-center gap-x-2 rounded-full border border-white px-4 py-2 font-secondary">
             <FontAwesomeIcon icon={faShare} className="text-lg" />
+            <span>Share</span>
           </button>
         </div>
       </div>

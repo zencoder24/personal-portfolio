@@ -20,8 +20,8 @@ const HeroContent = () => {
           <hr className="  h-1 w-24 rounded border-0 bg-gradient-to-r from-primary to-secondary md:my-4"></hr>
           <div className="">
             <p className="font-secondary text-lg font-semibold text-white">
-              I really love to build really cool things for the web. It is
-              mission to build exceptional digital experiences.
+              I love to build really cool things for the web. It is mission to
+              build exceptional digital experiences.
             </p>
           </div>
         </div>

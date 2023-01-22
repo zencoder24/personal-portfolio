@@ -3,6 +3,7 @@ import FooterSection from "./components/FooterSection";
 import NavMenu from "./components/NavMenu";
 import Nav from "./components/Nav";
 import { Nunito, Lora, Pacifico } from "@next/font/google";
+import { SearchContextProvider } from "./components/Context/store";
 
 const nunito = Nunito({ variable: "--font-nunito" });
 const lora = Lora({ variable: "--font-lora" });
@@ -22,7 +23,7 @@ export default function RootLayout({ children }) {
         <div className="mx-16 md:mx-24">
           <Nav />
           <NavMenu />
-          {children}
+          <SearchContextProvider>{children}</SearchContextProvider>
           <FooterSection />
         </div>
       </body>
