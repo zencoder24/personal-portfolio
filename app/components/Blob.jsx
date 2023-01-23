@@ -1,9 +1,8 @@
 "use client";
 import React from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { meshBounds } from "@react-three/drei";
 import { useRef } from "react";
-import vertexShader from "./shaders/vertexshader";
+import vertexShader from "./shaders/vertexShader";
 import fragmentShader from "./shaders/fragmentShader";
 import { useMemo } from "react";
 import { MathUtils } from "three";
