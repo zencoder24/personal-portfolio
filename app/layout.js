@@ -2,6 +2,7 @@ import "./styles/globals.css";
 import FooterSection from "./components/FooterSection";
 import NavMenu from "./components/NavMenu";
 import Nav from "./components/Nav";
+import { NextSeo } from "next-seo";
 import { Nunito, Lora, Pacifico } from "@next/font/google";
 import { SearchContextProvider } from "./components/Context/store";
 
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width" />
+        <NextSeo useAppDir={true} />
       </head>
       <body>
         <div className="mx-16 md:mx-24">

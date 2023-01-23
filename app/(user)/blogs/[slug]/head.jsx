@@ -3,6 +3,7 @@ import { groq } from "next-sanity";
 import { client } from "../../../../lib/sanity.client";
 import urlFor from "../../../../lib/urlFor";
 import Favicon from "../../../components/Favicon";
+import { NextSeo } from "next-seo";
 
 export default async function Head({ params: { slug } }) {
   const query = groq`
@@ -18,17 +19,28 @@ export default async function Head({ params: { slug } }) {
 
   return (
     <>
-      <title>{blog.title}</title>
-      <meta property="og:title" content={blog.title} />
-      <meta property="og:description" content={blog.description} />
-      <meta property="og:type" content="article" />
-      <meta property="og:image" content={urlFor(blog.featureImage).url()} />
-      <meta name="twitter:title" content={blog.title} />
-      <meta name="twitter:description" content={blog.description} />
-      <meta name="twitter:image" content={urlFor(blog.featureImage).url()} />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content="@RoddTheDev" />
       <Favicon />
+      <NextSeo
+        useAppDir={true}
+        title={blog.title}
+        description={blog.description}
+        openGraph={{
+          title: blog.title,
+          description: blog.description,
+          url: `www.rodthedev.com/blogs/${slug}`,
+          images: [
+            {
+              url: urlFor(blog.featureImage),
+            },
+          ],
+          siteName: "RodTheDev",
+        }}
+        twitter={{
+          handle: "@RoddTheDev",
+          site: "@RoddTheDev",
+          cardType: "summary_large_image",
+        }}
+      />
     </>
   );
 }
