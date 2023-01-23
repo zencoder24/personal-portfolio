@@ -27,6 +27,10 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${nunito.variable} ${lora.variable} ${pacifico.variable} `}
     >
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+      </head>
       <body>
         <div className="mx-16 md:mx-24">
           <Nav />

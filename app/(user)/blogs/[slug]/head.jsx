@@ -2,6 +2,7 @@ import React from "react";
 import { groq } from "next-sanity";
 import { client } from "../../../../lib/sanity.client";
 import urlFor from "../../../../lib/urlFor";
+import Favicon from "../../../components/Favicon";
 
 export default async function Head({ params: { slug } }) {
   const query = groq`
@@ -27,6 +28,7 @@ export default async function Head({ params: { slug } }) {
       <meta name="twitter:image" content={urlFor(blog.featureImage).url()} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content="@RoddTheDev" />
+      <Favicon />
     </>
   );
 }

@@ -46,7 +46,7 @@ const NavMenu = () => {
             <a
               onClick={(e) => setMenuOpen(!menuOpen)}
               className=" cursor-pointer text-2xl uppercase text-white hover:text-primary "
-              to="/contact-me"
+              to="/contact"
             >
               Contact Me
             </a>
