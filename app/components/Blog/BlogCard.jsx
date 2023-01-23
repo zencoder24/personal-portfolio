@@ -1,5 +1,4 @@
 import React from "react";
-import code from "../../../public/code.jpg";
 import urlFor from "../../../lib/urlFor";
 import ClientRoute from "../Blog/ClientRoute";
 

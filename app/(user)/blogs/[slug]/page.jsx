@@ -1,8 +1,5 @@
 import React from "react";
 import Image from "next/image";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShare } from "@fortawesome/free-solid-svg-icons";
 import { groq } from "next-sanity";
 import { client } from "../../../../lib/sanity.client";
 import urlFor from "../../../../lib/urlFor";
