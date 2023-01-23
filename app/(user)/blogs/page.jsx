@@ -22,6 +22,7 @@ export default function Blogs() {
           <form className="flex flex-col gap-2 md:flex md:w-[50%] md:flex-row">
             <input
               type="text"
+              disabled
               placeholder="Enter your email"
               className=" rounded-lg bg-gray-700 py-3 pl-4 font-primary text-white  placeholder:font-semibold placeholder:text-gray-400 focus:outline-none  md:w-full"
             />

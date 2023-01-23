@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import Link from "next/link";
 import {
   faGithub,
   faLinkedin,
@@ -15,9 +16,18 @@ const FooterSection = () => {
         id="socials"
         className="flex flex-row justify-center gap-3 md:w-1/3 md:gap-6"
       >
-        <FontAwesomeIcon icon={faGithub} className="text-xl" />
-        <FontAwesomeIcon icon={faLinkedin} className="text-xl" />
-        <FontAwesomeIcon icon={faTwitter} className="text-xl" />
+        <a href="https://github.com/zencoder24" target="_blank">
+          <FontAwesomeIcon icon={faGithub} className="text-xl" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/rodderick-garland-58ba19160/"
+          target="_blank"
+        >
+          <FontAwesomeIcon icon={faLinkedin} className="text-xl" />
+        </a>
+        <a href="https://twitter.com/RoddTheDev" target="_blank">
+          <FontAwesomeIcon icon={faTwitter} className="text-xl" />
+        </a>
       </div>
     </footer>
   );
