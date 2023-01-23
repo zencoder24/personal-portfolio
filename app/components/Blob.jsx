@@ -7,6 +7,7 @@ import vertexShader from "./shaders/vertexshader";
 import fragmentShader from "./shaders/fragmentShader";
 import { useMemo } from "react";
 import { MathUtils } from "three";
+import { motion } from "framer-motion-3d";
 
 const Shape = () => {
   const mesh = useRef(null);
@@ -32,7 +33,10 @@ const Shape = () => {
     }
   });
   return (
-    <mesh
+    <motion.mesh
+      initial={{ y: -50 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 1.2 }}
       ref={mesh}
       scale={1.6}
       onPointerOver={() => (hover.current = true)}
@@ -45,13 +49,13 @@ const Shape = () => {
         fragmentShader={fragmentShader}
         uniforms={uniforms}
       />
-    </mesh>
+    </motion.mesh>
   );
 };
 const Blob = () => {
   return (
     <Canvas
-      className="-z-50 w-full md:mt-[-24rem] md:!w-[50%]"
+      className="-z-50 w-full  md:mt-[-24rem] md:!w-[50%]"
       camera={{ position: [0, 0, 8] }}
     >
       <Shape />

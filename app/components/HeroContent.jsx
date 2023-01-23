@@ -1,9 +1,16 @@
+"use client";
 import GlassButton from "./GlassButton";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const HeroContent = () => {
   return (
-    <div className="w-full md:h-screen  md:w-[50%]">
+    <motion.div
+      initial={{ y: 500 }}
+      animate={{ y: -30 }}
+      transition={{ duration: 1 }}
+      className="w-full md:h-screen  md:w-[50%]"
+    >
       <main className="font-primay flex h-full flex-col gap-8">
         <div>
           <h1 className=" font-primary text-4xl font-extrabold text-white md:text-5xl">
@@ -59,7 +66,7 @@ const HeroContent = () => {
           </div>
         </blockquote> */}
       </main>
-    </div>
+    </motion.div>
   );
 };
 
