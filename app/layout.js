@@ -5,12 +5,20 @@ import Nav from "./components/Nav";
 import { Nunito, Lora, Pacifico } from "@next/font/google";
 import { SearchContextProvider } from "./components/Context/store";
 
-const nunito = Nunito({ variable: "--font-nunito" });
-const lora = Lora({ variable: "--font-lora" });
+const nunito = Nunito({
+  display: "swap",
+  variable: "--font-nunito",
+});
+const lora = Lora({
+  display: "swap",
+  variable: "--font-lora",
+  subsets: ["latin"],
+});
 const pacifico = Pacifico({
   weight: "400",
   variable: "--font-pacifico",
   subsets: "cursive",
+  display: "swap",
 });
 
 export default function RootLayout({ children }) {
