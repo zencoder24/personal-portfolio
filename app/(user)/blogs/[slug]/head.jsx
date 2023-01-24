@@ -29,6 +29,7 @@ export default async function Head({ params: { slug } }) {
           title: blog.title,
           description: blog.description,
           url: `www.rodthedev.com/blogs/${slug}`,
+          type: "website",
           images: [
             {
               url: urlFor(blog.featureImage).url(),

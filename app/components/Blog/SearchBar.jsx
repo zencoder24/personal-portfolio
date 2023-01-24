@@ -9,7 +9,7 @@ const SearchBar = () => {
   return (
     <div className=" flex flex-col  justify-center rounded-lg py-16  text-slate-200 md:block md:pr-8 ">
       <form className="mx-auto my-0">
-        <div className="relative flex items-center">
+        <div className="relative flex  items-center">
           <FontAwesomeIcon
             icon={faMagnifyingGlass}
             className="absolute ml-3 text-white"
@@ -18,7 +18,7 @@ const SearchBar = () => {
             type="text"
             onChange={(e) => setSearchText(e.target.value)}
             placeholder="Search title or description...."
-            className="rounded-lg bg-gray-700  px-32 py-4 pl-10 font-primary font-semibold text-white placeholder:text-gray-400  focus:outline-none"
+            className=" rounded-lg bg-gray-700 px-4 py-4   pl-10 font-primary font-semibold text-white placeholder:text-gray-400 focus:outline-none  md:px-16"
           />
         </div>
         {/* <div className="mt-8">

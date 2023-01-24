@@ -43,7 +43,7 @@ export default function Blogs() {
           </form>
         </div>
 
-        <div className="mt-16 mb-6 flex flex-col md:flex-row">
+        <div className="mt-16 mb-6 flex flex-col  md:flex-row">
           <SearchBar />
           <BlogContainer />
         </div>
