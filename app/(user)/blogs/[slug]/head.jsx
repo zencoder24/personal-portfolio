@@ -16,6 +16,7 @@ export default async function Head({ params: { slug } }) {
   `;
 
   const blog = await client.fetch(query, { slug });
+  const imageUrl = urlFor(blog.featureImage);
 
   return (
     <>
@@ -30,7 +31,7 @@ export default async function Head({ params: { slug } }) {
           url: `www.rodthedev.com/blogs/${slug}`,
           images: [
             {
-              url: urlFor(blog.featureImage),
+              url: imageUrl,
             },
           ],
           siteName: "RodTheDev",
