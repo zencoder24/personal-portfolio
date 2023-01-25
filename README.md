@@ -49,7 +49,7 @@
 
 ## About This Project
 
-## <img src="repo_assets/desktop_rtd.png" alt="Logo" >
+## <img src="public/RTDdekstop.png" alt="Desktop" >
 
 **This is a personal portfolio website for Rodderick Garland. This site features a blog, a list of skills and projects I have created, and a way to contact.**
 
@@ -69,13 +69,10 @@
 
 ### Built With
 
-
- - [Next 13](https://beta.nextjs.org/docs)
- - [Sanity](https://www.sanity.io/)
- - [Tailwind](https://tailwindcss.com/)
- - [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)
- 
-
+- [Next 13](https://beta.nextjs.org/docs)
+- [Sanity](https://www.sanity.io/)
+- [Tailwind](https://tailwindcss.com/)
+- [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
