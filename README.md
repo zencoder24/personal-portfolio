@@ -51,13 +51,13 @@
 
 ## <img src="repo_assets/desktop_rtd.png" alt="Logo" >
 
-**This is a personal portfolio website for Rodderick Garland. This site features a downloadable resume, links to my projects, a link to my blog, and a way to contact me.**
+**This is a personal portfolio website for Rodderick Garland. This site features a blog, a list of skills and projects I have created, and a way to contact.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Features
 
-**📱 Uses Sanity.io for content managment*
+**📱 Uses Sanity.io for content managment**
 
 **📖 Full-featured Blog Page**
 
@@ -69,10 +69,13 @@
 
 ### Built With
 
-<p>
-  <img alt="NextJs" src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" height="30px"/>
-  <img alt="Tailwindcss" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" height="30px"/>
-</p>
+
+ - [Next 13](https://beta.nextjs.org/docs)
+ - [Sanity](https://www.sanity.io/)
+ - [Tailwind](https://tailwindcss.com/)
+ - [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)
+ 
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,8 +123,8 @@ Open http://localhost:3000 to view it in the browser. The page will reload if yo
 
 ## Usage
 
-Open the project folder and Navigate to `/src/components/`. <br/>
-You will find all the components used and you can edit your information accordingly.
+Open the project folder and Navigate to `/app` directory. <br/>
+You will find all the components and pages used and you can edit your information accordingly.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
